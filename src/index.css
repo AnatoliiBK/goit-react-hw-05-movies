@@ -29,3 +29,53 @@ code {
 .header-link {
   text-decoration: none;
 }
+
+.card-first {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  
+}
+
+.card-sec {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.card {
+  display: flex;
+  column-gap: 30px;
+
+}
+
+.card-th {
+  
+}
+
+.card-four {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.releaseYear {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.overview {
+  font-weight: 700;
+}
+
+.genres {
+  font-weight: 700;
+}
+
+.genres-list {
+  font-weight: 500;
+}
+
+.user-score {
+  font-weight: 500;
+}
