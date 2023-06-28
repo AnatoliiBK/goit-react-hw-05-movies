@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, Route, Routes } from 'react-router-dom';
+import { useParams, Link, Route, Routes,  Outlet } from 'react-router-dom';
 import axios from 'axios';
 import { Cast } from './Cast';
 import { Reviews } from './Reviews';
@@ -65,6 +65,7 @@ export const MovieDetails = () => {
           }
         />
       </Routes>
+      <Outlet />
     </div>
   );
 };

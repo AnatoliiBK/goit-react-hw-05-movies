@@ -21,9 +21,11 @@ export const Home = () => {
       <h2>Home</h2>
       <p>Welcome to the home page!</p>
       {movies.map(movie => (
-        <div key={movie.id}>
-          <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
-        </div>
+        <ul key={movie.id}>
+          <li>
+             <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+          </li>          
+        </ul>
       ))}
     </div>
   );
