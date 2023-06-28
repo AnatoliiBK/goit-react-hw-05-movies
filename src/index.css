@@ -79,3 +79,14 @@ code {
 .user-score {
   font-weight: 500;
 }
+
+.actor-name {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.actor-character {
+  font-weight: 500;
+  font-size: 24px;
+
+}

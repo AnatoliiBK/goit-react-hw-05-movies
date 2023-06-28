@@ -23,11 +23,11 @@ export const Cast = () => {
       <h2>Cast</h2>
       {cast.map(actor => (
         <div key={actor.id}>
-          <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} alt={actor.name} />
-          <p>
+          <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} alt={actor.name} width={200} />
+          <p className='actor-name'>
             {actor.name}
           </p>
-          <p>Character: {actor.character}</p>
+          <p className='actor-character'>Character: {actor.character}</p>
         </div>
       ))}
     </div>
