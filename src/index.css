@@ -49,9 +49,9 @@ code {
 
 }
 
-.card-th {
+/* .card-th {
   
-}
+} */
 
 .card-four {
   display: flex;
@@ -89,4 +89,16 @@ code {
   font-weight: 500;
   font-size: 24px;
 
+}
+
+.decor {
+  padding: 10px 30px;
+}
+
+.review-list {
+  font-weight: 400;
+}
+
+.review-link {
+  font-weight: 700;
 }

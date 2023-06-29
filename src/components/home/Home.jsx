@@ -17,9 +17,9 @@ export const Home = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Home</h2>
-      <p>Welcome to the home page!</p>
+    <div className='decor'>
+      <h2>Trending today</h2>
+      
       {movies.map(movie => (
         <ul key={movie.id}>
           <li>

@@ -33,7 +33,7 @@ export const MovieDetails = () => {
   };
 
   return (
-    <div>
+    <div className='decor'>
       <div className='card'>
         <div className='card-first'>
           <button onClick={handleGoBack}>Go back</button>
@@ -52,7 +52,7 @@ export const MovieDetails = () => {
         </div>
       </div>
 
-      <div>
+      <div className='decor'>
         <h3>Additional Information</h3>
         <ul>
           <li>
