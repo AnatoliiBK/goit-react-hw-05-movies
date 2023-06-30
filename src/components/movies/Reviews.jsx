@@ -7,7 +7,7 @@ export const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    // Викликати API TMDb для отримання відгуків про фільм
+    
     axios
       .get(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=889c6c698b758e37f5a9c5b22a486a89`)
       .then(response => {
@@ -47,7 +47,7 @@ export const Reviews = () => {
 //   const [reviews, setReviews] = useState([]);
 
 //   useEffect(() => {
-//     // Викликати API TMDb для отримання відгуків про фільм
+//     
 //     axios.get(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=889c6c698b758e37f5a9c5b22a486a89`)
 //       .then(response => {
 //         setReviews(response.data.results);

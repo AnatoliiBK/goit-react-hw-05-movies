@@ -6,7 +6,7 @@ export const Home = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    // Викликати API TMDb для отримання списку фільмів
+    
     axios.get('https://api.themoviedb.org/3/trending/movie/week?api_key=889c6c698b758e37f5a9c5b22a486a89')
       .then(response => {
         setMovies(response.data.results);
@@ -35,7 +35,7 @@ export const Home = () => {
 //     const [movies, setMovies] = useState([]);
   
 //     useEffect(() => {
-//       // Викликати API TMDb для отримання списку фільмів
+
 //       axios.get('https://api.themoviedb.org/3/trending/movie/week?api_key=889c6c698b758e37f5a9c5b22a486a89')
 //         .then(response => {
 //           setMovies(response.data.results);

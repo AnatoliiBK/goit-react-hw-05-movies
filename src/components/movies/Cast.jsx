@@ -7,7 +7,7 @@ export const Cast = () => {
   const [cast, setCast] = useState([]);
 
   useEffect(() => {
-    // Викликати API TMDb для отримання акторського складу фільму
+    
     axios
       .get(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=889c6c698b758e37f5a9c5b22a486a89`)
       .then(response => {
@@ -40,7 +40,7 @@ export const Cast = () => {
 //   const [cast, setCast] = useState([]);
 
 //   useEffect(() => {
-//     // Викликати API TMDb для отримання акторського складу фільму
+//     
 //     axios.get(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=889c6c698b758e37f5a9c5b22a486a89`)
 //       .then(response => {
 //         setCast(response.data.cast);
