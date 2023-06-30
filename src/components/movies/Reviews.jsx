@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
 
@@ -35,7 +35,7 @@ export const Reviews = () => {
   );
 };
 
-
+export default Reviews;
 
 
 // import React, { useEffect, useState } from 'react';

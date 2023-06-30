@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, Route, Routes, Outlet, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Cast } from './Cast';
-import { Reviews } from './Reviews';
+// import { Cast } from './Cast';
+// import { Reviews } from './Reviews';
+import Cast from './Cast';
+import Reviews from './Reviews';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
   const navigate = useNavigate();
@@ -89,7 +91,7 @@ export const MovieDetails = () => {
   );
 };
 
-
+export default MovieDetails;
 
 
 
