@@ -10,7 +10,7 @@ export const Movies = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Перевірка, чи є наявний список фільмів у стані локації
+    // чи є наявний список фільмів у стані локації
     if (location.state && location.state.movies) {
       setMovies(location.state.movies);
     }
@@ -21,14 +21,14 @@ export const Movies = () => {
       return;
     }
 
-    setSearchQuery(searchInput); // Зберегти введене значення у стані searchQuery
+    setSearchQuery(searchInput);
 
-    // Викликати API TMDb для пошуку фільмів
+    
     axios
       .get(`https://api.themoviedb.org/3/search/movie?api_key=889c6c698b758e37f5a9c5b22a486a89&query=${searchInput}`)
       .then(response => {
         setMovies(response.data.results);
-        // Зберігати список фільмів у стані локації
+        
         navigate('.', { state: { movies: response.data.results } });
       })
       .catch(error => {
@@ -38,7 +38,7 @@ export const Movies = () => {
 
   const handleKeyPress = e => {
     if (e.key === 'Enter') {
-      setSearchQuery(searchInput); // Зберегти введене значення у стані searchQuery
+      setSearchQuery(searchInput);
       handleSearch();
     }
   };
