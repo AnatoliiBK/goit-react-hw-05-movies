@@ -46,12 +46,11 @@ code {
 .card {
   display: flex;
   column-gap: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
 
 }
 
-/* .card-th {
-  
-} */
 
 .card-four {
   display: flex;
@@ -93,6 +92,7 @@ code {
 
 .decor {
   padding: 10px 30px;
+  border-bottom: 2px solid black;
 }
 
 .review-list {
@@ -101,4 +101,8 @@ code {
 
 .review-link {
   font-weight: 700;
+}
+
+header {
+  border-bottom: 2px solid black;
 }
