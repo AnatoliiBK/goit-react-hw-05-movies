@@ -10,7 +10,7 @@ export const Movies = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // чи є наявний список фільмів у стані локації
+    
     if (location.state && location.state.movies) {
       setMovies(location.state.movies);
     }

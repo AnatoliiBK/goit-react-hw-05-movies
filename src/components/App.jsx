@@ -6,10 +6,6 @@ import { Movies } from './movies/Movies';
 const MovieDetails = lazy(() => import('./movies/MovieDetails'));
 const Cast = lazy(() => import('./movies/Cast'));
 const Reviews = lazy(() => import('./movies/Reviews'));
-// import { Movies } from './movies/Movies';
-// import { MovieDetails } from './movies/MovieDetails';
-// import { Cast } from './movies/Cast';
-// import { Reviews } from './movies/Reviews';
 
 
 export const App = () => {
